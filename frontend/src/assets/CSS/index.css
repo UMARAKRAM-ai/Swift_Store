@@ -16,6 +16,14 @@ main {
   padding-left: 0.5rem;
 }
 
+.Card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
 .product-title {
   height: 2.5em; /* Set a fixed height */
   overflow: hidden; /* Hide overflow content */
@@ -39,6 +47,13 @@ table th {
   border: 1px solid #ddd;
 }
 
+.product-title{
+  height: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .review button {
   margin-top: 10px;
 }
@@ -50,4 +65,17 @@ table th {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.pro-button {
+  opacity: var(--contentOpacity);
+  background: #2a2a2a;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s, opacity 0.3s;
 }

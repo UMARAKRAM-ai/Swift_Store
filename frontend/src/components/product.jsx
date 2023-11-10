@@ -12,12 +12,18 @@ const Product = ({ product }) => {
     <animated.div style={fadeIn}>
       <Card className='mb-4 shadow-sm' style={{ height: '100%', marginBottom: '20px' }}>
         <Link to={`/product/${product._id}`}>
-          <Card.Img src={product.image} alt={product.name} variant='top' style={{ height: '200px', objectFit: 'cover' }} />
+          {/* Center the image within the Card */}
+          <Card.Img
+            src={product.image}
+            alt={product.name}
+            variant='top'
+            style={{ height: '200px', objectFit: 'cover', display: 'block', margin: 'auto' }}
+          />
         </Link>
 
         <Card.Body className="d-flex flex-column">
           <Link to={`/product/${product._id}`} className="text-decoration-none mb-auto">
-            <Card.Title as="h5">
+            <Card.Title className='product-title' as="h5">
               <strong>{product.name}</strong>
             </Card.Title>
           </Link>

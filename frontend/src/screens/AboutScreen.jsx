@@ -1,47 +1,79 @@
-import React from 'react';
-import { Container, Card, Row, Col } from 'react-bootstrap';
-import { useSpring, animated } from 'react-spring';
+import React from "react";
+import { Container, Card, CardGroup, Row, Col } from "react-bootstrap";
+import { useSpring, animated } from "react-spring";
+import NewHeaders from "../components/NewHeaders";
+import "../assets/CSS/index.css";
 
 const AboutScreen = () => {
   const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (
-    <Container className="mt-4">
-      <Row>
-        <Col md={8} className="mx-auto">
-          <Card>
-            {/* Background Image */}
-            <div
-              style={{
-                backgroundImage: 'url("/images/Canon-Camera.jpg")', // Replace with the path to your image
-                backgroundSize: 'cover',
-                height: '200px', // Adjust the height as needed
-              }}
-            >
-              <animated.div style={fadeIn}>
-                <Card.Header className="bg-dark text-light text-center">
-                  <h2>About Our E-Commerce Store</h2>
-                </Card.Header>
-              </animated.div>
-            </div>
+    <>
+      <NewHeaders
+        backgroundImage="images/heroBg/3.jpg"
+        title="Empowering Your Digital Lifestyle"
+        subtitle="Discover the Story Behind Swift, Your Trusted Destination for Cutting-Edge Electronics and Innovation"
+        buttonText="Shop Now"
+      />
+      <CardGroup className="d-flex">
+        <Card>
+          <Card.Img variant="top" src="images/heroBg/5.jpg" />
+          <Card.Body>
+            <Card.Title>Smartwatch Pro X</Card.Title>
+            <Card.Text>
+              Elevate your style with the Smartwatch Pro X. This sleek and
+              sophisticated smartwatch combines fashion with functionality. Stay
+              connected with notifications, track your fitness goals, and enjoy
+              the convenience of a built-in heart rate monitor. The Smartwatch
+              Pro X is more than just a timepiece; it's a statement of modern
+              living.
+            </Card.Text>
+          </Card.Body>
 
-            <Card.Body>
-              {/* Stylish Text */}
-              <animated.div style={fadeIn}>
-                <Card.Text className="text-center">
-                  Welcome to Swift, your go-to destination for all your shopping
-                  needs! We pride ourselves on providing high-quality products
-                  and exceptional customer service.
-                </Card.Text>
-              </animated.div>
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
 
-              {/* Additional Content */}
-              {/* ... (same as the previous example) ... */}
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+        <Card>
+          <Card.Img variant="top" src="images/heroBg/2.jpg" />
+          <Card.Body>
+            <Card.Title>Wireless Headphones</Card.Title>
+            <Card.Text>
+              Immerse yourself in a world of superior sound quality with our
+              Wireless Noise-Canceling Headphones. Enjoy crystal-clear audio,
+              deep bass, and unparalleled comfort. Whether you're on a commute,
+              at the gym, or simply relaxing at home, these headphones deliver
+              an immersive audio experience. Elevate your listening with style
+              and innovation.
+            </Card.Text>
+          </Card.Body>
+
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+
+        <Card>
+          <Card.Img variant="top" src="images/heroBg/4.jpg" />
+          <Card.Body>
+            <Card.Title>Ultimate Mobile Accessory Bundle</Card.Title>
+            <Card.Text>
+              Enhance your mobile experience with our Ultimate Mobile Accessory
+              Bundle. This comprehensive set includes high-speed chargers,
+              durable phone cases, and versatile stands. Stay connected on the
+              go with the latest accessories designed for convenience and style.
+              Elevate your mobile lifestyle with the Ultimate Mobile Accessory
+              Bundle.
+            </Card.Text>
+          </Card.Body>
+
+          <Card.Footer>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </Card.Footer>
+        </Card>
+      </CardGroup>
+    </>
   );
 };
 
