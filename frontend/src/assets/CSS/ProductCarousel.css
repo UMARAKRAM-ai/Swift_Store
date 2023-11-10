@@ -1,0 +1,32 @@
+/* ProductCarousel.css */
+
+.product-carousel {
+  background-color: #007bff; /* Bootstrap primary color */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.carousel-image {
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.carousel-title {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
