@@ -5,7 +5,7 @@ const Footer = () => {
   return (
       <footer class="footer">
   <div class="footer__addr">
-    <h1 class="footer__logo">PROSHOP</h1>
+    <h1 class="footer__logo">Swift Store</h1>
         
     <h2>Contact</h2>
     

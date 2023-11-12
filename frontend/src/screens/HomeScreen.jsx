@@ -11,6 +11,8 @@ import ProductCarousel from "../components/ProductCarousel";
 import Meta from "../components/Meta";
 import Footer from "../components/Footer";
 import NewHeaders from "../components/NewHeaders";
+import HotDeal from '../components/HotDeal';
+import NewsLetter from '../components/NewsLetter';
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -46,6 +48,9 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
+        <div>
+      {!keyword && <HotDeal/> }  
+        </div>
           <Meta />
           <h1 style={{ marginTop: "40px" }}>Latest Products</h1>
           <Row className="mb-4" style={{ marginTop: "40px" }}>
@@ -69,6 +74,7 @@ const HomeScreen = () => {
           />
         </>
       )}
+      { !keyword && <NewsLetter/> }
     </>
   );
 };

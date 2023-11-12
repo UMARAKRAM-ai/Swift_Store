@@ -13,7 +13,7 @@ const AboutScreen = () => {
         backgroundImage="images/heroBg/3.jpg"
         title="Empowering Your Digital Lifestyle"
         subtitle="Discover the Story Behind Swift, Your Trusted Destination for Cutting-Edge Electronics and Innovation"
-        buttonText="Shop Now"
+        buttonText="Explore"
       />
       <CardGroup className="d-flex">
         <Card>
