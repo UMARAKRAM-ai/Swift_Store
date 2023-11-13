@@ -28,6 +28,7 @@ import ProductListScreen from './screens/admin/ProductListScreen';
 import ProductEditScreen from './screens/admin/ProductEditScreen';
 import UserListScreen from './screens/admin/UserListScreen';
 import UserEditScreen from './screens/admin/UserEditScreen';
+import ContactScreen from './screens/ContactScreen';
 import { HelmetProvider, helmetProvier } from 'react-helmet-async';
 
 const router = (
@@ -42,6 +43,7 @@ const router = (
         <Route path='/cart' element={<CartScreen />} />
         <Route path='/login' element={<LoginScreen />} />
         <Route path='/about' element={<AboutScreen />} />
+        <Route path='/contact' element={<ContactScreen />} />
         <Route path='/register' element={<RegisterScreen />} />
       
         <Route path='' element={<PrivateRoute/>}>

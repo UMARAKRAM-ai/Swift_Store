@@ -10,7 +10,6 @@ import orderRoutes from './routes/orderRoutes.js';
 import uploadRoutes from './routes/uploadRoutes.js'
 import connectDB from './config/db.js';
 
-
 const app = express(); 
 connectDB();
 const port = 5000;
