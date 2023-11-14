@@ -26,15 +26,17 @@ const ContactScreen = () => {
                   <Form.Control as="textarea" rows={4} placeholder="Your Message" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button variant="dark" type="submit" className="me-4 btn btn-success btn-lg btn-block">
                   Submit
                 </Button>
               </Form>
             </div>
           </Col>
         </Row>
+        
       </Container>
     </div>
+
   )
 }
 
