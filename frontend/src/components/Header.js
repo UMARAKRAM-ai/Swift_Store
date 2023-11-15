@@ -11,6 +11,7 @@ import { logout } from '../slices/authSlice';
 import SearchBox from './SearchBox';
 import { useSelector } from 'react-redux';
 import logo from '../assets/Logo.png'
+import '../assets/CSS/Header.css'
 
 
 const Header = () => {
@@ -35,7 +36,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect fixed='top'>
+        <Navbar  className='NavCss' variant='dark' expand='lg' collapseOnSelect fixed='top'>
           <Container>
             <LinkContainer to='/'>
               <Navbar.Brand> <img

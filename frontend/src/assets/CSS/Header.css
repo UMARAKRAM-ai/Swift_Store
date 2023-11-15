@@ -4,3 +4,8 @@
   opacity: 0.8;
   color: black;
 }
+
+.NavCss{
+  background-color: rgb(226, 147, 0);
+   background: linear-gradient(to right, #460056, #000000); 
+}
